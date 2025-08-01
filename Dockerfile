@@ -1,7 +1,8 @@
 FROM python:3.9-alpine3.13
 LABEL maintainer='Tejas'
 
-ENV PYTHONUNBUFFERED=1
+#minimize the delay 
+ENV PYTHONUNBUFFERED=1 
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
